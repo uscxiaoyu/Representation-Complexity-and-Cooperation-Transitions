@@ -1,13 +1,9 @@
 # Figure 3 Review Package
 
 This folder is a self-contained review-stage reproduction package for
-the manuscript Figure 3 training-dynamics panel. It is intentionally smaller
-than `code-for-review`: it keeps only the ABM implementation, the three
+the manuscript Figure 3 training-dynamics panel. It keeps the ABM implementation, the three
 state-representation DQN agents, the Figure 3 reproduction command, and a
 small smoke test proving that SRC1, SRC2, and SRC3 ABM workflows execute.
-
-Repository:
-<https://github.com/uscxiaoyu/Representation-Complexity-and-Cooperation-Transitions>
 
 ## Contents
 
@@ -17,10 +13,6 @@ Repository:
 - `modules/model/dqn_agent_src3_structural_gnn.py`: SRC3 structural GNN DQN.
 - `modules/reproduce_figure3_training_dynamics.py`: Figure 3 reproduction workflow.
 - `modules/run_three_abm_smoke.py`: short SRC1/SRC2/SRC3 execution test.
-
-No script imports the main repository or the larger `code-for-review` package.
-The `outputs/` directory is not part of the distributed package. It is created
-automatically on first run.
 
 ## Environment
 
@@ -73,7 +65,3 @@ python scripts/run_three_abm_smoke.py
 This smoke test uses small runtime overrides and writes:
 
 - `outputs/smoke_runs/quick_abm_smoke_summary_seed0.json`
-
-It is not manuscript evidence; it is a workflow check showing that SRC1, SRC2,
-and SRC3 all complete pre-training, training, and testing phases under the same
-ABM implementation.
