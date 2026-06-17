@@ -6,6 +6,9 @@ than `code-for-review`: it keeps only the ABM implementation, the three
 state-representation DQN agents, the Figure 3 reproduction command, and a
 small smoke test proving that SRC1, SRC2, and SRC3 ABM workflows execute.
 
+Repository:
+<https://github.com/uscxiaoyu/Representation-Complexity-and-Cooperation-Transitions>
+
 ## Contents
 
 - `modules/model/adaptive_network_model.py`: adaptive-network ABM.
